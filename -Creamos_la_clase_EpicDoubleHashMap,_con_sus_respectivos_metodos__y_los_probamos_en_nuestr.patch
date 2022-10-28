@@ -1,0 +1,533 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 513ad84c020431ee7042f139e248568cea52b5fa)
++++ b/.idea/workspace.xml	(date 1666738495801)
+@@ -4,18 +4,16 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9c32a3a1-68cf-4480-9d59-f98b35fccb9e" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Tp/Area.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Tp/Boss.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Tp/EpicDoubleHashMap.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Tp/Main.java" afterDir="false" />
++    <list default="true" id="9c32a3a1-68cf-4480-9d59-f98b35fccb9e" name="Changes" comment="-Creamos la clase EpicDoubleHashMap, con sus respectivos metodos; y los probamos en nuestro main">
++      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/GetNonexistentValueException.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/RemoveItemFromAnExistingKeyExceptions.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/RepeatedValuesExeption.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/TheKeyExistsException.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Tp/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tp/Area.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Tp/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tp/Boss.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Tp/EpicDoubleHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tp/EpicDoubleHashMap.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Tp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tp/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,6 +28,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -41,13 +44,14 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/PIL/IdeaProjects/Tp2-Final - Copy&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -57,6 +61,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1666366765594</updated>
+     </task>
++    <task id="LOCAL-00001" summary="-Creamos la clase EpicDoubleHashMap, con sus respectivos metodos; y los probamos en nuestro main">
++      <created>1666369627979</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1666369627979</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -70,4 +82,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="-Creamos la clase EpicDoubleHashMap, con sus respectivos metodos; y los probamos en nuestro main" />
++    <option name="LAST_COMMIT_MESSAGE" value="-Creamos la clase EpicDoubleHashMap, con sus respectivos metodos; y los probamos en nuestro main" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/Exceptions/TheKeyExistsException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Exceptions/TheKeyExistsException.java b/src/main/java/Exceptions/TheKeyExistsException.java
+new file mode 100644
+--- /dev/null	(date 1666738495817)
++++ b/src/main/java/Exceptions/TheKeyExistsException.java	(date 1666738495817)
+@@ -0,0 +1,7 @@
++package Exceptions;
++
++public class TheKeyExistsException extends Exception{ ;
++    public TheKeyExistsException(String message) {
++        super(message);
++    }
++}
+Index: src/main/java/Exceptions/RemoveItemFromAnExistingKeyExceptions.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Exceptions/RemoveItemFromAnExistingKeyExceptions.java b/src/main/java/Exceptions/RemoveItemFromAnExistingKeyExceptions.java
+new file mode 100644
+--- /dev/null	(date 1666738495811)
++++ b/src/main/java/Exceptions/RemoveItemFromAnExistingKeyExceptions.java	(date 1666738495811)
+@@ -0,0 +1,7 @@
++package Exceptions;
++
++public class RemoveItemFromAnExistingKeyExceptions extends Exception {
++    public RemoveItemFromAnExistingKeyExceptions(String message) {
++        super(message);
++    }
++}
+Index: src/main/java/Exceptions/RepeatedValuesExeption.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Exceptions/RepeatedValuesExeption.java b/src/main/java/Exceptions/RepeatedValuesExeption.java
+new file mode 100644
+--- /dev/null	(date 1666738495814)
++++ b/src/main/java/Exceptions/RepeatedValuesExeption.java	(date 1666738495814)
+@@ -0,0 +1,7 @@
++package Exceptions;
++
++public class RepeatedValuesExeption extends Exception{
++    public RepeatedValuesExeption(String message) {
++        super(message);
++    }
++}
+Index: src/main/java/Tp/Boss.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Tp/Boss.java b/src/main/java/Tp/Boss.java
+--- a/src/main/java/Tp/Boss.java	(revision 513ad84c020431ee7042f139e248568cea52b5fa)
++++ b/src/main/java/Tp/Boss.java	(date 1666738495824)
+@@ -1,5 +1,7 @@
+ package Tp;
+ 
++import java.util.Objects;
++
+ public class Boss {
+ 
+     private String name;
+@@ -25,4 +27,13 @@
+                 "Name='" + name + '\'' +
+                 '}';
+     }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (o == null || getClass() != o.getClass()) return false;
++        Boss boss = (Boss) o;
++        return name.equals(boss.name);
++    }
++
+ }
+Index: src/main/java/Tp/Area.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Tp/Area.java b/src/main/java/Tp/Area.java
+--- a/src/main/java/Tp/Area.java	(revision 513ad84c020431ee7042f139e248568cea52b5fa)
++++ b/src/main/java/Tp/Area.java	(date 1666738495821)
+@@ -1,5 +1,7 @@
+ package Tp;
+ 
++import java.util.Objects;
++
+ public class Area {
+ 
+     private String name;
+@@ -25,4 +27,13 @@
+                 "Name='" + name + '\'' +
+                 '}';
+     }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (o == null || getClass() != o.getClass()) return false;
++        Area area = (Area) o;
++        return name.equals(area.name);
++    }
++
+ }
+Index: src/main/java/Exceptions/GetNonexistentValueException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Exceptions/GetNonexistentValueException.java b/src/main/java/Exceptions/GetNonexistentValueException.java
+new file mode 100644
+--- /dev/null	(date 1666738495808)
++++ b/src/main/java/Exceptions/GetNonexistentValueException.java	(date 1666738495808)
+@@ -0,0 +1,7 @@
++package Exceptions;
++
++public class GetNonexistentValueException extends Throwable {
++    public GetNonexistentValueException(String message) {
++        super(message);
++    }
++}
+Index: src/main/java/Tp/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Tp/Main.java b/src/main/java/Tp/Main.java
+--- a/src/main/java/Tp/Main.java	(revision 513ad84c020431ee7042f139e248568cea52b5fa)
++++ b/src/main/java/Tp/Main.java	(date 1666738495831)
+@@ -1,61 +1,102 @@
+ package Tp;
+ 
++import Exceptions.GetNonexistentValueException;
++import Exceptions.RepeatedValuesExeption;
++import Exceptions.TheKeyExistsException;
++
+ import java.util.HashMap;
+ 
+ public class Main {
+-    public static void main (String[] args){
++    public static void main (String[] args) throws TheKeyExistsException, RepeatedValuesExeption, GetNonexistentValueException {
+ 
+-        EpicDoubleHashMap<Integer, Object, Object> map = new EpicDoubleHashMap<>();
++        EpicDoubleHashMap<Integer, Area, Boss> map = new EpicDoubleHashMap<>();
+ 
+         Area a = new Area("Accountancy");
+         Boss b = new Boss("Rick");
+ 
+         //Carga mapa 1
+-        map.addFirstType(1,new Area("Electronic"));
+-        map.addFirstType(2,new Area("Administration"));
+-        map.addFirstType(3,new Area("Systems"));
+-        map.addFirstType(4,a);
++        map.addFirstType(1, new Area("Electronic"));
++        map.addFirstType(2, new Area("Administration"));
++        map.addFirstType(3, new Area("Systems"));
++        map.addFirstType(4, a);
+ 
+         //Carga mapa2
+-        map.addSecondType(1,new Boss("Jhon"));
+-        map.addSecondType(2,new Boss("Harry"));
+-        map.addSecondType(3,new Boss("Jack"));
+-        map.addSecondType(4,b);
++        map.addSecondType(5, new Boss("Jhon"));
++        map.addSecondType(6, new Boss("Harry"));
++        map.addSecondType(7, new Boss("Jack"));
++        map.addSecondType(8, new Boss("Lily"));
++        map.addSecondType(12, b);
++
++
++        /*
++        //- Si colocamos las mismas keys en los mapas, nos salta la excepción...
++        map.addFirstType(15,new Area("Marketing"));
++        map.addFirstType(15,new Area("Business"));
++        map.addSecondType(13,new Boss("Peter"));
++        map.addSecondType(13,new Boss("Ben"));
++
++
++        - Si agregamos el mismo valor a mas de 3 items, nos salta la excepción...
++        map.addSecondType(13,new Boss("Lalo"));
++        map.addSecondType(14,new Boss("Lalo"));
++        map.addSecondType(15,new Boss("lalo"));
++        map.addSecondType(16,new Boss("lalo"));
++        map.addSecondType(17,new Boss("lalo"));
++
++
++        -Si queremos obtener el valor de una key inexistente, nos salta la excepción...
++        System.out.println(map.getMap1(5));
++        System.out.println(map.getMap2(2));
++        */
++
+ 
+         //Recorremos los mapas
+         System.out.println("\n* We go through our maps *");
+ 
+-        HashMap<Integer, Object> h1 = map.getFirstMap1();
+-        for (Integer i : h1.keySet()){
++        HashMap<Integer, Area> h1 = map.getFirstMap1();
++        for (Integer i : h1.keySet()) {
+             System.out.println(h1.get(i));
+         }
+ 
+         System.out.println(" ");
+ 
+-        HashMap<Integer, Object> h2 = map.getSecondMap2();
+-        for ( Integer i : h2.keySet()) {
++        HashMap<Integer, Boss> h2 = map.getSecondMap2();
++        for (Integer i : h2.keySet()) {
+             System.out.println(h2.get(i));
+         }
+ 
++
+         //Eliminamos un item de cada mapa
+         System.out.println("\n* We remove an item from each map *");
+ 
+         map.removeFirstType(2);
+-        map.removerSecondType(4);
++        map.removerSecondType(6);
++        map.removeTwoTypes(10);
++
++         /*Si colocamos las keys inexistentes en los mapas para remover, nos salta la excepción...
++
++        map.removeFirstType(5);
++        map.removerSecondType(3);
++
++          */
+ 
+         //Recorremos los mapas, sin los items eliminados
+         System.out.println("\n* We go through the maps again *");
+ 
+-        HashMap<Integer, Object> hr1 = map.getFirstMap1();
+-        for (Integer i : hr1.keySet()){
++        HashMap<Integer, Area> hr1 = map.getFirstMap1();
++        for (Integer i : hr1.keySet()) {
+             System.out.println(hr1.get(i));
+         }
+ 
+         System.out.println(" ");
+ 
+-        HashMap<Integer, Object> hr2 = map.getSecondMap2();
+-        for ( Integer i : hr2.keySet()) {
++        HashMap<Integer, Boss> hr2 = map.getSecondMap2();
++        for (Integer i : hr2.keySet()) {
+             System.out.println(hr2.get(i));
+         }
++
++        //Primer método aux
++        System.out.println(map.numberOfMapValues());
++
+     }
+ }
+Index: src/main/java/Tp/EpicDoubleHashMap.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Tp/EpicDoubleHashMap.java b/src/main/java/Tp/EpicDoubleHashMap.java
+--- a/src/main/java/Tp/EpicDoubleHashMap.java	(revision 513ad84c020431ee7042f139e248568cea52b5fa)
++++ b/src/main/java/Tp/EpicDoubleHashMap.java	(date 1666738495828)
+@@ -1,6 +1,12 @@
+ package Tp;
+ 
++import Exceptions.GetNonexistentValueException;
++import Exceptions.RemoveItemFromAnExistingKeyExceptions;
++import Exceptions.RepeatedValuesExeption;
++import Exceptions.TheKeyExistsException;
++
+ import java.util.HashMap;
++import java.util.Set;
+ 
+ public class EpicDoubleHashMap <K extends Number, V, T> {
+     HashMap<K, V> mapValue1;
+@@ -11,36 +17,144 @@
+         mapValue2 = new HashMap<>();
+     }
+ 
++     public V getMap1(K key) throws GetNonexistentValueException {
++         if (mapValue1.get(key) == null) {
++             throw new GetNonexistentValueException("The value of the key:"+key+ " cannot be returned, since it does not exist");
++         }
++         return mapValue1.get(key);
++     }
++
++    public T getMap2(K key) throws GetNonexistentValueException {
++        if (mapValue2.get(key) == null) {
++            throw new GetNonexistentValueException("The value of the key:"+key+ " cannot be returned, since it does not exist");
++        }
++        return mapValue2.get(key);
++    }
++
++
+     public HashMap<K, V> getFirstMap1() {
++
+         return mapValue1;
+     }
+-
+-    public void addFirstType(K key, V value){
+-        mapValue1.put(key, value);
+-    }
+-
+-    public void addSecondType(K key, T value2){
+-        mapValue2.put(key, value2);
+-    }
+-
+     public HashMap<K, T> getSecondMap2() {
+         return mapValue2;
+     }
+ 
+-    public void addTwo(K key, V value, T value2) {
+-        mapValue1.put(key, value);
++    public void addFirstType(K key, V value) throws TheKeyExistsException, RepeatedValuesExeption {
++       if (mapValue1.containsKey(key)) {
++           throw new TheKeyExistsException("It's not possible to add the value" +value+ ", since the key exists and " +
++                   "with other values");
++       }
++       repeatedValuesMap1(value);
++       mapValue1.put(key, value);
++
++    }
++
++
++    public void addSecondType(K key, T value2) throws TheKeyExistsException, RepeatedValuesExeption{
++        if (mapValue2.containsKey(key)) {
++            throw new TheKeyExistsException("It's not possible to add the value" +value2+ ", since the key exists and " +
++                    "with other values");
++        }
++        repeatedValuesMap2(value2);
+         mapValue2.put(key, value2);
+     }
+ 
++    /*
++    public void addSecondType(K key, T value2)  {
++        try{
++            if (mapValue2.containsKey(key)) {
++                throw new TheKeyExistsException("It's not possible to add the value" +value2+ ", since the key exists " +
++                        "and with other values");
++            } mapValue2.put(key, value2);
++        } catch(TheKeyExistsException e){
++            e.printStackTrace();
++        }
++    }
++    }
++     */
++
++
+     public void removeFirstType(K key){
+-        mapValue1.remove(key);
++        try{
++            if (!mapValue1.containsKey(key)) {
++                throw new RemoveItemFromAnExistingKeyExceptions("It's not possible to remove the item, because " +
++                        "the key" + key+ "doesn't exist");
++            } mapValue1.remove(key);
++        } catch(RemoveItemFromAnExistingKeyExceptions e){
++            e.printStackTrace();
++        }
+     }
+ 
+     public void removerSecondType(K key){
+-        mapValue2.remove(key);
++        try{
++            if (!mapValue2.containsKey(key)) {
++                throw new RemoveItemFromAnExistingKeyExceptions("It's not possible to remove the item, because the " +
++                        "key" + key+ "doesn't exist");
++            } mapValue2.remove(key);
++        } catch(RemoveItemFromAnExistingKeyExceptions e){
++            e.printStackTrace();
++        }
+     }
+     public void removeTwoTypes(K key){
+         mapValue1.remove(key);
+         mapValue2.remove(key);
+     }
++    public void repeatedValuesMap1(V value) throws RepeatedValuesExeption{
++        int val= 0;
++        Set<K> keys = mapValue1.keySet();
++        for(K key : keys){
++            if(mapValue1.get(key).equals(value)){
++                val++;
++            }
++        }
++        if (val >=2){
++            throw new RepeatedValuesExeption(" Cannot be added, because the value " +value+
++                    "is repeated more than 3 times");
++        }
++    }
++
++    public void repeatedValuesMap2(T value2)throws RepeatedValuesExeption{
++        int val= 0;
++        Set<K> keys = mapValue2.keySet();
++        for(K key : keys){
++            if(mapValue2.get(key).equals(value2)){
++                val++;
++            }
++        }
++        if (val >=2){
++            throw new RepeatedValuesExeption(" Cannot be added, because the value " +value2+
++                    "is repeated more than 3 times");
++        }
++    }
++
++    /*
++    public void repeatedValuesMap1(K key1, V value) throws RepeatedValuesExeption{
++        int val= 0;
++        for(K key : mapValue1.keySet()){
++            if(mapValue1.get(key).equals(value) && !mapValue2.containsKey(key)){
++                val++;
++            }
++        }
++        if (val >=2){
++            throw new RepeatedValuesExeption("The item with key " + key1+" cannot be added, because its value " +value+
++                    "is repeated more than 3 times");
++        };
++    }
++    */
++
++    // Métodos auxiliares
++
++    public String numberOfMapValues(){
++        if (mapValue1.size() > mapValue2.size()){
++            System.out.println("The first map has more values than the second map.");
++        } else if (mapValue1.size() == mapValue2.size()){
++            System.out.println("Maps have the same number of values.");
++        } else {
++            System.out.println("The second map has more values than the first map.");
++        }
++        return null;
++    }
++
++
+ }
+\ No newline at end of file
